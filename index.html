@@ -28,6 +28,30 @@
         h2 {
             color: #1f2933;
         }
+        .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill {
+    padding: 15px;
+    border-radius: 10px;
+    background: #f4f6f8;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill i {
+    font-size: 40px;
+    color: #1f2933;
+    margin-bottom: 10px;
+}
+
     </style>
 </head>
 <body>
@@ -53,13 +77,45 @@
 
 <section>
     <h2>Skills</h2>
-    <ul>
-        <li>Python, SQL</li>
-        <li>Power BI, Excel</li>
-        <li>Data Cleaning & Visualization</li>
-        <li>Basic Machine Learning</li>
-    </ul>
+
+    <div class="skills">
+        <div class="skill">
+            <i class="fa-brands fa-python"></i>
+            <p>Python</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-solid fa-database"></i>
+            <p>SQL</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-solid fa-chart-line"></i>
+            <p>Power BI</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-solid fa-file-excel"></i>
+            <p>Excel</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <p>HTML</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>CSS</p>
+        </div>
+
+        <div class="skill">
+            <i class="fa-brands fa-github"></i>
+            <p>GitHub</p>
+        </div>
+    </div>
 </section>
+
 
 <section>
     <h2>Projects</h2>
