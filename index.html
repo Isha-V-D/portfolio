@@ -36,4 +36,170 @@
 
         section {
             background: #ffffff;
-            margin
+            margin: 25px auto;
+            padding: 30px;
+            max-width: 1000px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1f2933;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: #f4f6f8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill i {
+            font-size: 36px;
+            color: #1f2933;
+            margin-bottom: 10px;
+        }
+
+        .skill p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project h3 {
+            margin-bottom: 5px;
+            color: #111827;
+        }
+
+        .project p {
+            margin: 5px 0;
+        }
+
+        /* Contact */
+        .contact a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #1f2933;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a i {
+            margin-right: 6px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Isha Devakar</h1>
+    <p>Data Analyst | Aspiring Data Scientist</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am an MCS student with a strong interest in data analysis and machine learning.
+        I enjoy working with data to uncover insights and build practical solutions using
+        Python, SQL, and data visualization tools. I am continuously learning and improving
+        my skills through hands-on projects.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+        <div class="skill"><i class="fa-solid fa-database"></i><p>SQL</p></div>
+        <div class="skill"><i class="fa-solid fa-chart-line"></i><p>Power BI</p></div>
+        <div class="skill"><i class="fa-solid fa-file-excel"></i><p>Excel</p></div>
+        <div class="skill"><i class="fa-solid fa-chart-pie"></i><p>Data Visualization</p></div>
+        <div class="skill"><i class="fa-solid fa-broom"></i><p>Data Cleaning</p></div>
+        <div class="skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+        <div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+        <div class="skill"><i class="fa-brands fa-github"></i><p>GitHub</p></div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Employee Emotion Analysis System</h3>
+        <p>
+            Developed a machine learning-based system to analyze employee emotions using
+            text and facial data. The system provides insights into employee mood trends and
+            helps identify stress or burnout for better workplace well-being.
+        </p>
+        <p><strong>Tools:</strong> Python, Machine Learning, NLP</p>
+    </div>
+
+    <div class="project">
+        <h3>Face Recognition System</h3>
+        <p>
+            Built a face recognition application for security surveillance using pre-recorded
+            images. The system accurately detects and recognizes authorized individuals.
+        </p>
+        <p><strong>Tools:</strong> Python, OpenCV</p>
+    </div>
+
+    <div class="project">
+        <h3>Data Analysis Dashboard</h3>
+        <p>
+            Created an interactive dashboard to analyze business data and visualize trends
+            using charts and KPIs for better decision-making.
+        </p>
+        <p><strong>Tools:</strong> Power BI, Excel, SQL</p>
+    </div>
+
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <a href="mailto:your-email@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+</section>
+
+<footer>
+    © 2025 Isha Devkar. All rights reserved.
+</footer>
+
+</body>
+</html>
+
